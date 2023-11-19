@@ -101,7 +101,7 @@ def go():
         email.send_keys(args.email)
         password.send_keys(args.password)
         submit.click()
-        time.sleep(3) # wait this many seconds
+        time.sleep(60) # wait this many seconds
         browser.get(browser.current_url)
 
     if not logged_in(browser):
@@ -277,5 +277,4 @@ def get_args():
 
 if __name__ == '__main__':
     go()
-
 
